@@ -354,6 +354,15 @@
     font-style: italic;
     max-width: 32ch;
   }
+  /* Engage CRM screenshots are near-square, not tall phone shots —
+     give them more breathing room inside a media-pair. */
+  .media-pair > figure > img[src*="Screenshot"] {
+    max-width: 78mm;
+    max-height: 95mm;
+  }
+  .media-pair > figure:has(> img[src*="Screenshot"]) > figcaption {
+    max-width: 38ch;
+  }
 
   /* Asset checklist */
   .asset-list { list-style: none; padding: 0; margin: 0; }
