@@ -242,6 +242,11 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 2.8mm;
+    border: 1px solid #d9dfe8;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #f7f9fc 0%, #eef2f8 100%);
+    box-shadow: 0 3px 14px rgba(15, 23, 42, 0.10);
   }
   .media > img,
   .media > video {
@@ -249,9 +254,9 @@
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    border: 1px solid var(--rule);
-    background: #000;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border: 1px solid #e4e8ef;
+    background: #fff;
+    box-shadow: 0 1px 5px rgba(15, 23, 42, 0.08);
   }
   .media.phone > img,
   .media.phone > video {
@@ -272,6 +277,49 @@
     color: var(--muted);
     font-style: italic;
     max-width: 70ch;
+  }
+
+  /* Two phone screenshots side-by-side, each with its own short caption */
+  .media-pair {
+    margin: 4mm 0 5mm;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5mm;
+    align-items: start;
+    justify-items: center;
+  }
+  .media-pair > figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2.4mm;
+    border: 1px solid #d9dfe8;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #f7f9fc 0%, #eef2f8 100%);
+    box-shadow: 0 3px 12px rgba(15, 23, 42, 0.09);
+  }
+  .media-pair > figure > img,
+  .media-pair > figure > video {
+    display: block;
+    width: 100%;
+    max-width: 56mm;
+    max-height: 110mm;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 1px solid #e4e8ef;
+    background: #fff;
+    box-shadow: 0 1px 5px rgba(15, 23, 42, 0.08);
+  }
+  .media-pair > figure > figcaption {
+    margin-top: 2mm;
+    font-size: 8.5pt;
+    line-height: 1.4;
+    color: var(--muted);
+    font-style: italic;
+    max-width: 32ch;
   }
 
   /* Asset checklist */
@@ -401,13 +449,15 @@
     <h2>How AI works alongside you</h2>
     <p>AI starts the chat, asks the key questions, and then hands over to you.</p>
 
-    <div class="visual">
-      <div class="icon">1</div>
-      <div class="meta">
-        <span class="tag">Screenshot</span>
-        <h4>Step-by-step strip: inquiry → reply → qualify → Engage → handoff</h4>
-        <p>A single horizontal visual showing the five steps as small phone screens or numbered tiles. Used as the anchor image for this page.</p>
-      </div>
+    <div class="media-pair">
+      <figure>
+        <img src="./Image_20260513_115359_826.png" alt="WhatsApp screenshot of the first message — AI acknowledges the applicant's enquiry for an apartment in Four Points by Sheraton at AED 136,000, with quick-reply options to Book a viewing, Get more details, or Speak to a broker.">
+        <figcaption>Step 1–2 · the enquiry lands and AI greets the applicant by name with the property already on the record.</figcaption>
+      </figure>
+      <figure>
+        <img src="./Image_20260513_115359_693.png" alt="WhatsApp screenshot of AI giving a clear property rundown — fully furnished 14th-floor serviced unit at Four Points by Sheraton with skyline views, pool, gym, concierge — then asking what the applicant wants to know more about.">
+        <figcaption>Step 2 · AI replies in brand voice with a clean rundown of the property and offers the next thread to follow.</figcaption>
+      </figure>
     </div>
 
     <div class="card">
@@ -467,9 +517,9 @@
     <h2>What AI qualifies, for each journey</h2>
     <p>Renters and buyers need different questions. AI knows which is which from the property the applicant inquired on, and adjusts.</p>
 
-    <figure class="media phone">
-      <img src="1000077490.jpeg" alt="WhatsApp thread where AI gives a 2-bed property rundown in Dubai Land Residence Complex and asks the applicant about mortgage, cash, or payment plan.">
-      <figcaption>Sales journey on WhatsApp — AI gives a quick property rundown and asks about payment terms, the right question for a sale.</figcaption>
+    <figure class="media">
+      <img src="./Image_20260513_115359_447.png" alt="WhatsApp thread showing AI qualification in a real conversation.">
+      <figcaption>AI qualification conversation example.</figcaption>
     </figure>
 
     <div class="grid">
@@ -495,6 +545,17 @@
 
     <h2>The handoff you receive</h2>
     <p>When a conversation reaches you, the applicant record already has:</p>
+
+    <div class="media-pair">
+      <figure >
+        <img src="./Screenshot 2026-05-13 at 12.06.49 PM.png" alt="Engage applicant record showing the timeline and WhatsApp conversation history captured before broker handoff.">
+        <figcaption>Engage record view · full applicant timeline and conversation context are ready before broker follow-up.</figcaption>
+      </figure>
+      <figure >
+        <img src="./Screenshot 2026-05-13 at 12.06.54 PM.png" alt="Engage applicant record with qualification fields and property linkage already populated.">
+        <figcaption>Engage record fields · property linkage and qualification details are already written on the applicant record.</figcaption>
+      </figure>
+    </div>
     <ul>
       <li>The applicant's name, phone, and WhatsApp identity.</li>
       <li>The property they inquired on, attached to the applicant record.</li>
@@ -505,15 +566,6 @@
 
     <div class="quote">
       You do not start the conversation from scratch. You continue it.
-    </div>
-
-    <div class="visual">
-      <div class="icon">⌗</div>
-      <div class="meta">
-        <span class="tag">Screenshot · Engage applicant record</span>
-        <h4>What the broker opens after handoff</h4>
-        <p>The applicant record in Engage with the property attached, budget and terms filled, status marked Viewing, consultant note visible, and conversation transcript. This is the most important visual in the guide. Redact PII.</p>
-      </div>
     </div>
 
     <h2>Price range in this experiment</h2>
@@ -554,10 +606,16 @@
     <p>When an applicant is qualified and ready to view, AI captures the preferred slot and writes the request to the applicant record in Engage with full context.</p>
     <p>The broker receives an Engage notification with the viewing details and a calendar invite link.</p>
 
-    <figure class="media phone">
-      <img src="1000077470.jpeg" alt="WhatsApp message from Betterhomes confirming an upcoming property appointment on May 14, 2026, 4:00 PM at Dubai Land Residence Complex, with an Add to Google Calendar button.">
-      <figcaption>The applicant's side of the same booking — AI confirms the viewing with the appointment details and an Add to Google Calendar link.</figcaption>
-    </figure>
+    <div class="media-pair">
+      <figure>
+        <img src="./Image_20260513_115359_944.png" alt="WhatsApp thread where AI offers three available viewing windows for the next day and the applicant chooses 1 PM, after which AI confirms a tentative slot at Four Points by Sheraton and says the broker will reach out directly.">
+        <figcaption>Booking · AI offers available slots, books the one the applicant chooses, and flags the broker for confirmation.</figcaption>
+      </figure>
+      <figure>
+        <img src="1000077470.jpeg" alt="WhatsApp message from Betterhomes confirming an upcoming property appointment on May 14, 2026, 4:00 PM at Dubai Land Residence Complex, with an Add to Google Calendar button.">
+        <figcaption>Confirmation · the applicant gets the appointment details and an Add to Google Calendar link in one tap.</figcaption>
+      </figure>
+    </div>
 
     <h2>Property switching, no lost history</h2>
     <p>Applicants browse. A renter who inquired about Marina yesterday might send you a JBR property today. When that happens, AI handles the transition cleanly.</p>
@@ -566,15 +624,6 @@
       <li>A consultant note is added so you can see exactly when and why the focus changed.</li>
       <li>The new conversation starts fresh on the new property, but the applicant's profile and preferences carry over.</li>
     </ul>
-
-    <div class="visual">
-      <div class="icon">↻</div>
-      <div class="meta">
-        <span class="tag">Screenshot · 2 panels</span>
-        <h4>Old applicant record remark + new conversation</h4>
-        <p>Left: the old applicant record in Engage with the new property reference and consultant note added. Right: the new WhatsApp conversation already focused on the new property. Shows the handover is clean.</p>
-      </div>
-    </div>
 
     <h2>Returning applicants are recognised</h2>
     <p>If an applicant has spoken to Engage before, AI recognises them. It does not create a duplicate record and it does not ask them their name again. You see the existing history, not a new noise event.</p>
@@ -587,15 +636,6 @@
       <li><strong>Mid-conversation safety net.</strong> If a conversation turns out to be spam after a few turns, the session is closed quietly. Engage is marked so the customer record reflects the truth.</li>
     </ul>
     <p>You only see real applicants.</p>
-
-    <div class="visual">
-      <div class="icon">⊘</div>
-      <div class="meta">
-        <span class="tag">Screenshot · before/after</span>
-        <h4>The broker's inbox, with and without AI</h4>
-        <p>Left: a raw WhatsApp inbox with spam, agent-to-broker messages, and noise. Right: the broker's Engage view after AI, showing only real applicants. Visual proof of the filter working.</p>
-      </div>
-    </div>
   </div>
 
   <div class="footer">
@@ -635,13 +675,20 @@
 
     <h2>A walk-through example</h2>
 
-    <div class="visual recording">
-      <div class="icon">▶</div>
-      <div class="meta">
-        <span class="tag recording">Recording · 45s</span>
-        <h4>Full walk-through: 10:42pm inquiry to 8:15am call</h4>
-        <p>Timeline recording matching the five cards below. Timestamped frames, no narration, captions only. This is the clip to share when explaining the AI assistant to a new broker.</p>
-      </div>
+    <figure class="media">
+      <img src="./Screenshot 2026-05-13 at 12.07.04 PM.png" alt="Engage applicant record showing stage and notes prepared for the broker at morning handoff.">
+      <figcaption>Morning handoff in Engage · stage, notes, and record context are prepared so the broker can move straight to action.</figcaption>
+    </figure>
+
+    <div class="media-pair">
+      <figure>
+        <img src="./Image_20260513_115359_581.png" alt="WhatsApp thread where AI describes the Sheikh Zayed Road area — metro, Dubai Mall, DIFC, Downtown — and confirms the AED 136k/year price fits the applicant's 130–140k budget.">
+        <figcaption>Mid-conversation · AI captures budget and area preferences without a single broker touch.</figcaption>
+      </figure>
+      <figure>
+        <img src="./Image_20260513_115400_063.png" alt="WhatsApp confirmation message with appointment details for May 14, 2026, 1:00 PM at Sheikh Zayed Road, an Add to Google Calendar link, and a broker contact card for Mohammadreza Abdorrahimian.">
+        <figcaption>End of the journey · appointment confirmed, broker introduced by name, calendar invite ready.</figcaption>
+      </figure>
     </div>
 
     <div class="card">
