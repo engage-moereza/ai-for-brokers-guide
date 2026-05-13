@@ -149,7 +149,7 @@
   }
   .grid .card { margin: 0; }
 
-  /* Cover “What changes for you” — three cards in one balanced row */
+  /* Cover “What changes for you” - three cards in one balanced row */
   .grid.grid--tri {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 3.5mm;
@@ -212,7 +212,7 @@
   .screenshot-slot h3 { margin: 0 0 2mm; }
   .screenshot-slot p { margin: 0; color: var(--muted); font-size: 10pt; }
 
-  /* Inline visual placeholders — for filling in with screenshots/recordings */
+  /* Inline visual placeholders - for filling in with screenshots/recordings */
   .visual {
     border: 1.5px dashed #c8d4ef;
     border-radius: 6px;
@@ -354,8 +354,9 @@
     font-style: italic;
     max-width: 32ch;
   }
+
   /* Engage CRM screenshots are near-square (~1400x1500), not tall phone
-     shots — give them more breathing room in both .media and .media-pair. */
+     shots - give them more breathing room in both .media and .media-pair. */
   .media-pair > figure > img[src*="Screenshot"] {
     max-width: 78mm;
     max-height: 95mm;
@@ -408,6 +409,7 @@
   .footer .pageno { font-variant-numeric: tabular-nums; }
 
   /* First-page broker summary: tighter vertical rhythm for one A4 sheet */
+  /* Summary sheet: tighter vertical rhythm so the whole page fits on one A4 sheet. */
   .page.summary-sheet .body h3 { margin: 2mm 0 0.5mm; }
   .page.summary-sheet .body p { margin-bottom: 1.5mm; font-size: 9.65pt; line-height: 1.48; }
   .page.summary-sheet .body ul { margin-bottom: 1.5mm; }
@@ -430,7 +432,7 @@
 <body>
 
 <!-- =================================================================
-     PAGE 1 — BROKER SUMMARY (ONE PAGE)
+     PAGE 1 - BROKER SUMMARY (ONE PAGE)
      ================================================================= -->
 <section class="page summary-sheet">
   <div class="header">
@@ -452,13 +454,13 @@
     <p class="eyebrow">For brokers</p>
     <h1>What you need to know</h1>
     <p class="lede">
-      Engage runs an assistant on WhatsApp that answers applicants about your listings, asks the right questions, updates the applicant record in Engage, and hands you a clear thread when it is time to act.
+      Engage runs an assistant on WhatsApp that answers applicants about your listings, asks the right questions, updates the applicant record in Engage, confirms viewing commitments, and hands you a clear thread when it is time to act.
     </p>
 
     <h3>What happens on WhatsApp</h3>
     <ul>
       <li>The assistant replies quickly when an applicant messages about a property.</li>
-      <li>It confirms the property, keeps the tone on brand, and qualifies before you step in.</li>
+      <li>It confirms the property, keeps the natural tone, qualifies before you step in, and gets the viewing committed before you step in.</li>
       <li>It does not negotiate, set final price, or commit on your behalf.</li>
     </ul>
 
@@ -466,7 +468,7 @@
     <p>Engage tells the assistant which journey to use from the listing. <strong>Rental:</strong> budget (annual rent), move-in date, cheque preference. <strong>Sale:</strong> budget (AED), payment terms, purpose. When all three for that journey are captured, the applicant is marked qualified in Engage.</p>
 
     <h3>Where applicants come from</h3>
-    <p>In this rollout the assistant is for applicants who reach you from property portals—the listing sites where your stock is advertised.</p>
+    <p>In this rollout the assistant is for applicants who reach you from property portals-the listing sites where your stock is advertised.</p>
 
     <h3>Engage records</h3>
     <ul>
@@ -476,10 +478,7 @@
     </ul>
 
     <h3>Viewings</h3>
-    <p>When the applicant is ready, the assistant captures the preferred slot and writes the request in Engage. You get an Engage notification with the viewing details and a calendar link. You still confirm and own the appointment.</p>
-
-    <h3>Property switching</h3>
-    <p>If the same applicant writes about a different listing, Engage keeps history: the previous property is stored, a short note explains the change, and the new thread continues with the same person profile.</p>
+    <p>When the applicant is ready, the assistant captures the preferred slot and writes the request in Engage. You still confirm and own the appointment.</p>
 
     <h3>Spam and noise</h3>
     <p>Traffic is filtered in layers so empty, abusive, or obvious junk is dropped or closed before it crowds your queue.</p>
@@ -491,7 +490,7 @@
     </ul>
 
     <h3>Testing and reporting</h3>
-    <p>Test during normal work with real applicants. If something breaks, report it quickly with time, applicant phone, property reference, what happened, what you expected, and a screenshot if you have one. Send it to the support channel for this assistant.</p>
+    <p>Test during normal work with real applicants. If something breaks, report it quickly with time, applicant phone, property reference, what happened, what you expected, and a screenshot if you have one. Send it to the group WhatsApp channel for this experiment.</p>
   </div>
 
   <div class="footer">
@@ -503,7 +502,7 @@
 
 
 <!-- =================================================================
-     PAGE 2 — COVER + INTRO
+     PAGE 2 - COVER + INTRO
      ================================================================= -->
 <section class="page">
   <div class="header">
@@ -522,8 +521,7 @@
   </div>
 
   <div class="body">
-    <p class="eyebrow">For Brokers</p>
-    <h1>AI assistant, in your words.</h1>
+    <h2>AI assistant, in your words.</h2>
     <p class="lede">
       The AI assistant that picks up your WhatsApp applicants the moment they arrive from the portals, qualifies them with the right questions, writes everything into Engage, and hands you back a conversation that is ready to meet for a viewing.
     </p>
@@ -550,6 +548,7 @@
         <p>AI creates, updates, and advances the applicant record, including qualifications, as the conversation moves. No copy-pasting from WhatsApp into Engage.</p>
       </div>
     </div>
+
   </div>
 
   <div class="footer">
@@ -561,7 +560,7 @@
 
 
 <!-- =================================================================
-     PAGE 3 — HOW AI WORKS WITH YOU
+     PAGE 3 - HOW AI WORKS WITH YOU
      ================================================================= -->
 <section class="page">
   <div class="header">
@@ -582,12 +581,12 @@
 
     <div class="media-pair">
       <figure>
-        <img src="./Image_20260513_115359_826.png" alt="WhatsApp screenshot of the first message — AI acknowledges the applicant's enquiry for an apartment in Four Points by Sheraton at AED 136,000, with quick-reply options to Book a viewing, Get more details, or Speak to a broker.">
+        <img src="./Image_20260513_115359_826.png" alt="WhatsApp screenshot of the first message - AI acknowledges the applicant's enquiry for an apartment in Four Points by Sheraton at AED 136,000, with quick-reply options to Book a viewing, Get more details, or Speak to a broker.">
         <figcaption>Step 1–2 · the enquiry lands and AI greets the applicant by name with the property already on the record.</figcaption>
       </figure>
       <figure>
-        <img src="./Image_20260513_115359_693.png" alt="WhatsApp screenshot of AI giving a clear property rundown — fully furnished 14th-floor serviced unit at Four Points by Sheraton with skyline views, pool, gym, concierge — then asking what the applicant wants to know more about.">
-        <figcaption>Step 2 · AI replies in brand voice with a clean rundown of the property and offers the next thread to follow.</figcaption>
+        <img src="./Image_20260513_115359_693.png" alt="WhatsApp screenshot of AI giving a clear property rundown - fully furnished 14th-floor serviced unit at Four Points by Sheraton with skyline views, pool, gym, concierge - then asking what the applicant wants to know more about.">
+        <figcaption>Step 2 · AI replies in natural voice with a clean rundown of the property and offers the next thread to follow.</figcaption>
       </figure>
     </div>
 
@@ -596,7 +595,7 @@
       <p>Someone sees one of your properties on the website, the portal, or a campaign and sends a WhatsApp message. AI receives it within a second.</p>
     </div>
     <div class="card">
-      <h3>2. AI replies in your brand voice</h3>
+      <h3>2. AI replies in natural voice</h3>
       <p>It greets the applicant, confirms the property they are asking about, and starts a short, natural conversation. No forms, no callbacks.</p>
     </div>
     <div class="card">
@@ -605,7 +604,7 @@
     </div>
     <div class="card">
       <h3>4. The applicant is captured in Engage as it happens</h3>
-      <p>AI creates the applicant record the moment it has enough information, attaches the property, and updates the record turn by turn. The applicant record is assigned to you, the broker who owns the property, not to a shared inbox.</p>
+      <p>AI creates the applicant record and the stage of the applicant the moment it has enough information, attaches the property, and updates the record turn by turn. The applicant record is assigned to you, the broker who owns the property, not to a shared inbox.</p>
     </div>
     <div class="card">
       <h3>5. You receive a viewing-ready conversation</h3>
@@ -615,8 +614,8 @@
     <h2>What AI will not do</h2>
     <ul>
       <li>Close on your behalf. Negotiation, pricing decisions, and commitments stay with you.</li>
-      <li>Auto-book confirmed viewings end to end. Brokers receive an Engage notification with the appointment details.</li>
-      <li>Replace your entire WhatsApp inbox. In this rollout it is focused on applicants who message in from property portals.</li>
+      <li>Auto-book confirmed viewings end to end. Brokers receive an Engage notification with the appointment details, subject to your confirmation.</li>
+      <li>Replace your entire WhatsApp inbox. In this rollout it is focused on applicants who inquire from the portals.</li>
     </ul>
   </div>
 
@@ -629,7 +628,7 @@
 
 
 <!-- =================================================================
-     PAGE 4 — WHAT AI QUALIFIES, FOR EACH JOURNEY
+     PAGE 4 - WHAT AI QUALIFIES, FOR EACH JOURNEY
      ================================================================= -->
 <section class="page">
   <div class="header">
@@ -658,7 +657,7 @@
         <h3>Rental applicants</h3>
         <dl class="kv">
           <dt>Budget</dt><dd>Annual rent the applicant is comfortable with.</dd>
-          <dt>Move-in date</dt><dd>When they need to be in by.</dd>
+          <dt>Move-in date</dt><dd>When they need to be moved in by.</dd>
           <dt>Cheques</dt><dd>Preferred number of cheques per year.</dd>
         </dl>
         <p>Once all three are captured, the applicant moves to <span class="pill">Qualified</span>.</p>
@@ -677,10 +676,16 @@
     <h2>The handoff you receive</h2>
     <p>When a conversation reaches you, the applicant record already has:</p>
 
-    <figure class="media phone">
-      <img src="./Screenshot 2026-05-13 at 12.06.49 PM.png" alt="Engage applicant record showing the timeline, WhatsApp conversation history, and qualification fields before broker handoff.">
-      <figcaption>Engage record · timeline, transcript, and key fields are ready before you follow up.</figcaption>
-    </figure>
+    <div class="media-pair">
+      <figure>
+        <img src="./Screenshot 2026-05-13 at 12.06.49 PM.png" alt="Engage applicant record showing the timeline and WhatsApp conversation history captured before broker handoff.">
+        <figcaption>Engage record view · a record of the conversation added to Engage.</figcaption>
+      </figure>
+      <figure>
+        <img src="./Screenshot 2026-05-13 at 12.06.54 PM.png" alt="Engage applicant record with qualification fields and property linkage already populated.">
+        <figcaption>Engage record fields · already linked to the property and the applicant record, and qualification details updated on Engage.</figcaption>
+      </figure>
+    </div>
     <ul>
       <li>The applicant's name, phone, and WhatsApp identity.</li>
       <li>The property they inquired on, attached to the applicant record.</li>
@@ -694,7 +699,7 @@
     </div>
 
     <h2>Where applicants come from</h2>
-    <p>In this rollout the assistant is for applicants who reach you from property portals—the listing sites where your properties are advertised.</p>
+    <p>In this rollout the assistant is for applicants who reach you from property portals-the listing sites where your properties are advertised.</p>
   </div>
 
   <div class="footer">
@@ -706,7 +711,7 @@
 
 
 <!-- =================================================================
-     PAGE 5 — VIEWINGS, PROPERTY SWITCHING, RETURNING APPLICANTS
+     PAGE 5 - VIEWINGS, PROPERTY SWITCHING, RETURNING APPLICANTS
      ================================================================= -->
 <section class="page">
   <div class="header">
@@ -722,40 +727,24 @@
   </div>
 
   <div class="body">
-    <h2>Viewings, with Engage broker notification</h2>
+    <h2>Viewings</h2>
     <p>When an applicant is qualified and ready to view, AI captures the preferred slot and writes the request to the applicant record in Engage with full context.</p>
-    <p>The broker receives an Engage notification with the viewing details and a calendar invite link.</p>
 
-    <div class="media-pair">
-      <figure>
-        <img src="./Image_20260513_115359_944.png" alt="WhatsApp thread where AI offers three available viewing windows for the next day and the applicant chooses 1 PM, after which AI confirms a tentative slot at Four Points by Sheraton and says the broker will reach out directly.">
-        <figcaption>Booking · AI offers available slots, books the one the applicant chooses, and flags the broker for confirmation.</figcaption>
-      </figure>
-      <figure>
-        <img src="1000077470.jpeg" alt="WhatsApp message from Betterhomes confirming an upcoming property appointment on May 14, 2026, 4:00 PM at Dubai Land Residence Complex, with an Add to Google Calendar button.">
-        <figcaption>Confirmation · the applicant gets the appointment details and an Add to Google Calendar link in one tap.</figcaption>
-      </figure>
-    </div>
-
-    <h2>Property switching, no lost history</h2>
-    <p>Applicants browse. A renter who inquired about Marina yesterday might send you a JBR property today. When that happens, AI handles the transition cleanly.</p>
-    <ul>
-      <li>The previous property reference is recorded on the old applicant record before the conversation moves.</li>
-      <li>A consultant note is added so you can see exactly when and why the focus changed.</li>
-      <li>The new conversation starts fresh on the new property, but the applicant's profile and preferences carry over.</li>
-    </ul>
+    <figure class="media phone">
+      <img src="./Image_20260513_115359_944.png" alt="WhatsApp thread where AI offers three available viewing windows for the next day and the applicant chooses 1 PM, after which AI confirms a tentative slot at Four Points by Sheraton and says the broker will reach out directly.">
+      <figcaption>Booking · AI offers available slots, books the one the applicant chooses, and flags the broker for confirmation.</figcaption>
+    </figure>
 
     <h2>Returning applicants are recognised</h2>
-    <p>If an applicant has spoken to Engage before, AI recognises them. It does not create a duplicate record and it does not ask them their name again. You see the existing history, not a new noise event.</p>
+    <p>If an applicant has spoken to Engage before, AI recognises them. It does not create a duplicate record and it does not ask them their name again.</p>
 
     <h2>Spam and noise stay out</h2>
-    <p>Three layers of protection sit in front of you:</p>
+    <p>Two layers of protection sit in front of you:</p>
     <ul>
-      <li><strong>Rate limits and basic checks.</strong> Empty messages, oversized messages, gibberish, and known spam patterns are dropped automatically.</li>
-      <li><strong>Classifier review.</strong> Borderline cases are reviewed by a fast classifier before reaching qualification.</li>
-      <li><strong>Mid-conversation safety net.</strong> If a conversation turns out to be spam after a few turns, the session is closed quietly. Engage is marked so the customer record reflects the truth.</li>
+      <li><strong>Spam identification.</strong> Obvious junk and abusive patterns are filtered before they reach your queue.</li>
+      <li><strong>Mid-conversation safety net.</strong> If a conversation turns out to be spam after a few turns, AI stops the conversation and marks the applicant as spam.</li>
     </ul>
-    <p>You only see real applicants.</p>
+    <p>You should only see real applicants.</p>
   </div>
 
   <div class="footer">
@@ -767,7 +756,7 @@
 
 
 <!-- =================================================================
-     PAGE 6 — WHAT AI GIVES YOU EVERY MORNING
+     PAGE 6 - WHAT AI GIVES YOU EVERY MORNING
      ================================================================= -->
 <section class="page">
   <div class="header">
@@ -791,7 +780,6 @@
       <li>Stage. Most useful: who is in <span class="pill">Viewing</span> and ready for follow-up.</li>
       <li>The full WhatsApp transcript and any notes AI captured along the way.</li>
     </ul>
-    <p>You decide the order of work. AI just makes sure the work is ready to be done.</p>
 
     <h2>A walk-through example</h2>
 
@@ -802,7 +790,7 @@
 
     <div class="media-pair">
       <figure>
-        <img src="./Image_20260513_115359_581.png" alt="WhatsApp thread where AI describes the Sheikh Zayed Road area — metro, Dubai Mall, DIFC, Downtown — and confirms the AED 136k/year price fits the applicant's 130–140k budget.">
+        <img src="./Image_20260513_115359_581.png" alt="WhatsApp thread where AI describes the Sheikh Zayed Road area - metro, Dubai Mall, DIFC, Downtown - and confirms the AED 136k/year price fits the applicant's 130–140k budget.">
         <figcaption>Mid-conversation · AI captures budget and area preferences without a single broker touch.</figcaption>
       </figure>
       <figure>
@@ -813,15 +801,15 @@
 
     <div class="card">
       <h3>10:42pm. Marina inquiry.</h3>
-      <p>Sara sees a 2-bed property in Marina Heights on the website and sends a WhatsApp message. AI replies in 1.4 seconds.</p>
+      <p>Sara sees a 2-bed property in Marina Heights on the portals and sends a WhatsApp message. AI replies in 1.4 seconds.</p>
     </div>
     <div class="card">
       <h3>10:43pm. Conversation begins.</h3>
-      <p>AI confirms she is asking about Marina Heights, asks if she is renting or buying, then asks about budget, move-in date, and cheque preference. Sara is renting, AED 180k a year, moving in next month, 4 cheques.</p>
+      <p>AI confirms she is asking about Marina Heights, then asks about budget, move-in date, and cheque preference. Sara is renting, AED 180k a year, moving in next month, 4 cheques.</p>
     </div>
     <div class="card">
       <h3>10:46pm. Applicant record created in Engage.</h3>
-      <p>The applicant record is attached to the Marina Heights property, assigned to the property's broker, marked <span class="pill">Viewing</span>. A consultant note captures Sara's preference for sea views.</p>
+      <p>The applicant record is attached to the Marina Heights property, assigned to the property's broker, marked <span class="pill">Qualified</span>. An AI-generated note captures Sara's preference for sea views.</p>
     </div>
     <div class="card">
       <h3>10:47pm. Handoff.</h3>
@@ -829,17 +817,35 @@
     </div>
     <div class="card">
       <h3>8:15am. You arrive.</h3>
-      <p>You open the applicant record, see the full picture, and call Sara. No qualification call needed. You skip straight to the viewing.</p>
+      <p>You open the applicant record, see the full picture, and call Sara. You can skip to the more detailed qualification and confirming a viewing.</p>
     </div>
+  </div>
 
-    <h2>What this means, day to day</h2>
-    <ul>
-      <li>Less time chasing details on WhatsApp. More time on the phone with applicants who matter.</li>
-      <li>No more lost applicants because nobody replied in time.</li>
-      <li>Engage records that reflect reality, written by the conversation itself.</li>
-      <li>Higher viewing rates per applicant, because the easy ones are filtered in and the noise is filtered out.</li>
-    </ul>
+  <div class="footer">
+    <span>AI for Brokers · Guide</span>
+    <span class="tagline">The Smart Move.</span>
+    <span class="pageno">6</span>
+  </div>
+</section>
 
+
+<!-- =================================================================
+     PAGE 7 - TESTING & REPORTING
+     ================================================================= -->
+<section class="page">
+  <div class="header">
+    <div class="brand">
+      <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+        <rect width="128" height="128" fill="#1A5CEB"></rect>
+        <path d="M35.6221 25.9622C35.6221 23.9615 37.244 22.3396 39.2447 22.3396H99.0183C100.019 22.3396 100.83 23.1506 100.83 24.1509V24.2444C100.83 25.0058 100.24 25.6373 99.4808 25.69L57.2451 28.6194C55.3462 28.7511 53.8731 30.3299 53.8731 32.2334V95.7763C53.8731 97.6758 55.3402 99.2527 57.2347 99.3896L99.5013 102.443C100.25 102.497 100.83 103.12 100.83 103.871C100.83 104.859 100.029 105.66 99.0403 105.66H39.2447C37.244 105.66 35.6221 104.038 35.6221 102.038V25.9622Z" fill="white"></path>
+        <path d="M60.6182 62.9093C60.6182 62.1265 61.24 61.4851 62.0225 61.461L72.1659 61.1479C72.9833 61.1227 73.6597 61.7785 73.6597 62.5963V66.8526C73.6597 67.6704 72.9833 68.3262 72.1659 68.301L62.0225 67.9879C61.24 67.9638 60.6182 67.3224 60.6182 66.5396V62.9093Z" fill="white"></path>
+      </svg>
+      <span class="wm">Engage</span>
+    </div>
+    <div class="doc-meta"><strong>AI Assistant</strong><br>Testing &amp; reporting</div>
+  </div>
+
+  <div class="body">
     <h2>Testing protocol</h2>
     <p>Keep testing simple and real.</p>
     <ul>
@@ -855,7 +861,7 @@
       <li>Applicant phone</li>
       <li>Property reference</li>
       <li>What happened</li>
-      <li>What should have happened</li>
+      <li>What you believe should have happened</li>
       <li>Screenshot (if available)</li>
     </ul>
 
@@ -873,7 +879,7 @@
   <div class="footer">
     <span>AI for Brokers · Guide</span>
     <span class="tagline">The Smart Move.</span>
-    <span class="pageno">6</span>
+    <span class="pageno">7</span>
   </div>
 </section>
 
