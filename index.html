@@ -363,9 +363,13 @@
   .media-pair > figure:has(> img[src*="Screenshot"]) > figcaption {
     max-width: 38ch;
   }
-  .media > img[src*="Screenshot"] {
-    max-width: 110mm;
-    max-height: 120mm;
+  .media > img[src*="Screenshot"],
+  .media.phone > img[src*="Screenshot"],
+  .media.wide > img[src*="Screenshot"] {
+    max-width: 140mm;
+    max-height: 150mm;
+    width: 140mm;
+    height: auto;
   }
 
   /* Asset checklist */
