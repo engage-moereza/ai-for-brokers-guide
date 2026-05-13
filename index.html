@@ -246,8 +246,13 @@
   .media > img,
   .media > video {
     display: block;
+    width: auto;
     max-width: 100%;
     height: auto;
+    border: 1px solid #d7dde8;
+    border-radius: 5px;
+    background: #f7f9fc;
+    box-shadow: 0 1.5mm 3mm rgba(23, 43, 77, 0.08);
   }
   .media.phone > img,
   .media.phone > video {
@@ -281,6 +286,8 @@
   }
   .media-pair > figure {
     margin: 0;
+    width: max-content;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -289,11 +296,15 @@
   .media-pair > figure > img,
   .media-pair > figure > video {
     display: block;
-    width: 100%;
+    width: auto;
     max-width: 56mm;
     max-height: 110mm;
     height: auto;
     object-fit: contain;
+    border: 1px solid #d7dde8;
+    border-radius: 5px;
+    background: #f7f9fc;
+    box-shadow: 0 1.5mm 3mm rgba(23, 43, 77, 0.08);
   }
   .media-pair > figure > figcaption {
     margin-top: 2mm;
