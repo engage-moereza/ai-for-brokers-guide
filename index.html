@@ -356,21 +356,33 @@
   }
 
   /* Engage CRM screenshots are near-square (~1400x1500), not tall phone
-     shots - give them more breathing room in both .media and .media-pair. */
+     shots - stack pairs full width; single figures use nearly full A4 body width. */
+  .media-pair:has(> figure > img[src*="Screenshot"]) {
+    grid-template-columns: 1fr;
+    gap: 2.5mm;
+  }
+  .media-pair:has(> figure > img[src*="Screenshot"]) > figure {
+    width: 100%;
+    max-width: 100%;
+  }
   .media-pair > figure > img[src*="Screenshot"] {
-    max-width: 78mm;
-    max-height: 95mm;
+    max-width: min(156mm, 100%);
+    width: min(156mm, 100%);
+    max-height: none;
+    height: auto;
+    flex-shrink: 0;
   }
   .media-pair > figure:has(> img[src*="Screenshot"]) > figcaption {
-    max-width: 38ch;
+    max-width: 70ch;
   }
   .media > img[src*="Screenshot"],
   .media.phone > img[src*="Screenshot"],
   .media.wide > img[src*="Screenshot"] {
-    max-width: 140mm;
-    max-height: 150mm;
-    width: 140mm;
+    max-width: min(156mm, 100%);
+    width: min(156mm, 100%);
+    max-height: none;
     height: auto;
+    flex-shrink: 0;
   }
 
   /* Asset checklist */
@@ -608,7 +620,7 @@
     </div>
     <div class="card">
       <h3>5. You receive a viewing-ready conversation</h3>
-      <p>Once the applicant answers the key questions, the applicant moves to <span class="pill">Viewing</span>. You get the full context and take over.</p>
+      <p>Once the applicant answers the key questions, the applicant moves to <span class="pill">Qualified</span>. You get the full context and take over.</p>
     </div>
 
     <h2>What AI will not do</h2>
