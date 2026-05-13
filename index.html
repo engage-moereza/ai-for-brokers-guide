@@ -355,25 +355,17 @@
     max-width: 32ch;
   }
 
-  /* Engage CRM screenshots are near-square (~1400x1500), not tall phone
-     shots - stack pairs full width; single figures use nearly full A4 body width. */
-  .media-pair:has(> figure > img[src*="Screenshot"]) {
-    grid-template-columns: 1fr;
-    gap: 2.5mm;
-  }
-  .media-pair:has(> figure > img[src*="Screenshot"]) > figure {
-    width: 100%;
-    max-width: 100%;
-  }
+  /* Engage CRM screenshots are near-square (~1400x1500). In .media-pair, keep the
+     default two columns and size each shot for half the line; single .media figures stay wide. */
   .media-pair > figure > img[src*="Screenshot"] {
-    max-width: min(156mm, 100%);
-    width: min(156mm, 100%);
-    max-height: none;
+    max-width: 74mm;
+    max-height: 86mm;
+    width: auto;
     height: auto;
     flex-shrink: 0;
   }
   .media-pair > figure:has(> img[src*="Screenshot"]) > figcaption {
-    max-width: 70ch;
+    max-width: 36ch;
   }
   .media > img[src*="Screenshot"],
   .media.phone > img[src*="Screenshot"],
